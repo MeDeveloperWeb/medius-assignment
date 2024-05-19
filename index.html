@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <nav class="main-nav">
+        <header class="logo">
+            <img src="media/new-logo.png" alt="Medius" width="100%">
+        </header>
+        <div class="nav-menu">
+            <ul class="menu">
+                <li class="menu-item">
+                    <img src="media/computer.svg">
+                    <div class="menu-item-name">Dashboard</div>
+                </li>
+                <li>
+                    <div class="menu-item open">
+                        <img src="media/money.svg">
+                        <div class="menu-item-name">Collection</div>
+                        <div class="expand">
+                            <span></span>
+                        </div>
+                    </div>
+                    <ul class="sub-menu">
+                        <li class="menu-item">
+                            <img src="media/stacks.svg">
+                            <div class="menu-item-name">Batch</div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="media/users.svg">
+                            <div class="menu-item-name">Accounts</div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="media/pillow-chart-1.svg">
+                            <div class="menu-item-name">Daily Report</div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <img src="media/file.svg">
+                    <div class="menu-item-name">Pre-Litigation</div>
+                    <div class="expand">
+                        <span></span>
+                    </div>
+                </li>
+                <li>
+                    <ul class="sub-menu">
+                        <li class="menu-item">
+                            <img src="media/legal-document.png">
+                            <div class="menu-item-name">Legal Notices</div>
+                            <div class="expand">
+                                <span></span>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="media/police.svg">
+                            <div class="menu-item-name">FIR</div>
+                            <div class="expand">
+                                <span></span>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <img src="media/files.svg">
+                    <div class="menu-item-name">Litigation</div>
+                </li>
+                <br>
+                <hr>
+            </ul>
+            <ul class="menu user-menu">
+                <br>
+                <li class="menu-item">
+                    <img src="media/customer-service.svg">
+                    <div class="menu-item-name">Communication</div>
+                </li>
+                <li class="menu-item">
+                    <img src="media/user-alt.svg">
+                    <div class="menu-item-name">Super-Admin</div>
+                    <div class="expand">
+                        <span></span>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    <img src="media/users.svg">
+                    <div class="menu-item-name">Users & Roles</div>
+                </li>
+                <li class="menu-item">
+                    <img src="media/pie-chart-alt.svg">
+                    <div class="menu-item-name">Account</div>
+                </li>
+                <li class="menu-item">
+                    <img src="media/news.svg">
+                    <div class="menu-item-name">Services</div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="accounts-section">
+        <header class="section-header">
+            <div class="menu-icon"></div>
+            <div class="heading-container">
+                <h1>Accounts</h1>
+                <h3>Total Result - 3422</h3>
+            </div>
+            <nav class="horizontal-menu">
+                <ul>
+                    <li><img src="media/search-svgrepo-com.svg" alt="search" height="100%"></li>
+                    <li><img src="media/bell-svgrepo-com.svg" alt="notification" height="100%"></li>
+                    <li class="user-img-container"><img src="media/avatar.jpeg" alt="user" width="100%"></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="section-content">
+            <div class="options-container">
+                <div>
+                    <input type="checkbox">
+                    <button class="filter">
+                        <img src="media/equalizer.svg">
+                        Filter
+                    </button>
+                    <button>
+                        <img src="media/sort.svg">
+                        Sort by
+                    </button>
+                </div>
+                <div class="bulk-action-container">
+                    <button class="bulk-action-open-button">Select Option for Bulk Action
+                        <div class="expand fill">
+                            <span></span>
+                        </div>
+                    </button>
+                    <dialog class="bulk-action-modal">
+                        <ul>
+                            <li>
+                                <button class="menu-item download-action">
+                                    <img src="media/download.svg">
+                                    <div class="menu-item-name">Download</div>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="menu-item issue-legal-notice-action">
+                                    <img src="media/01-fragments-icons-32-px-file-plus-dark.svg">
+                                    <div class="menu-item-name">Issue Legal Notice</div>
+                                </button>
+                               
+                            </li>
+                            <li>
+                                <button class="menu-item communicate-action">
+                                    <img src="media/01-fragments-icons-32-px-comment-dark.svg">
+                                    <div class="menu-item-name">Communicate</div>
+                                </button>
+                                
+                            </li>
+                            <li>
+                                <button class="menu-item fir-action">
+                                    <img src="media/police.svg">
+                                    <div class="menu-item-name">File FIR</div>
+                                </button>
+                            </li>
+                        </ul>
+                    </dialog>
+                </div>
+            </div>
+            <div class="card">
+                <input type="checkbox" class="card-item recipient-checkbox">
+                <div class="card-items-group full">
+                    <div class="card-item recipient-details width-fit">
+                        <p class="recipient-name">Ritu Raj Srivastava (124516716)</p>
+                        <p>
+                            Batch No. - 5
+                        </p>
+                        <hr>
+                        <div class="item-group">
+                            <p>Product - Tractor</p>
+                            <p>Rs. 45,1671</p>
+                            <p>180+ Days</p>
+                        </div>
+                        <hr>
+                        <div class="item-group">
+                            <p>Current Status: <span class="status danger">High Risk</span></p>
+                        </div>
+                    </div>
+                    <table class="card-item payment-status-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">
+                                    Last Disposition:
+                                    <br>
+                                    <b>Broken Promise To Pay</b>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Assigned Date</td>
+                                <td>10th Jan 2021</td>
+                            </tr>
+                            <tr>
+                                <td>1st Called Date</td>
+                                <td>11th Jan 2021</td>
+                            </tr>
+                            <tr>
+                                <td>Last Disposition Date</td>
+                                <td>28th May 2021</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="card-item">
+                        <div>Action</div>
+                        <select class="action-select">
+                            <option selected disabled>Select</option>
+                        </select>
+                        <hr>
+                        <br>
+                        <div>View History</div>
+                        <div class="communication-btn-group">
+                            <button>
+                                <img src="media/phone.svg">
+                                <div>Call</div>
+                            </button>
+                            <button>
+                                <img src="media/message.svg">
+                                <div>Message</div>
+                            </button>
+                            <button>
+                                <img src="media/mail.svg">
+                                <div>Email</div>
+                            </button>
+                            <button>
+                                <img src="media/group-29.svg">
+                                <div>Whatsapp</div>
+                            </button>
+                            <button>
+                                <img src="media/telemarketer.svg">
+                                <div>Dispositions</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <input type="checkbox" class="card-item recipient-checkbox">
+                <div class="card-items-group full">
+                    <div class="card-item recipient-details width-fit">
+                        <p class="recipient-name">Ritu Raj Srivastava (124516716)</p>
+                        <p>
+                            Batch No. - 5
+                        </p>
+                        <hr>
+                        <div class="item-group">
+                            <p>Product - Tractor</p>
+                            <p>Rs. 45,1671</p>
+                            <p>180+ Days</p>
+                        </div>
+                        <hr>
+                        <div class="item-group">
+                            <p>Current Status: <span class="status danger">High Risk</span></p>
+                        </div>
+                    </div>
+                    <table class="card-item payment-status-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">
+                                    Last Disposition:
+                                    <br>
+                                    <b>Broken Promise To Pay</b>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Assigned Date</td>
+                                <td>10th Jan 2021</td>
+                            </tr>
+                            <tr>
+                                <td>1st Called Date</td>
+                                <td>11th Jan 2021</td>
+                            </tr>
+                            <tr>
+                                <td>Last Disposition Date</td>
+                                <td>28th May 2021</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="card-item">
+                        <div>Action</div>
+                        <select class="action-select">
+                            <option selected disabled>Select</option>
+                        </select>
+                        <hr>
+                        <br>
+                        <div>View History</div>
+                        <div class="communication-btn-group">
+                            <button disabled>
+                                <img src="media/phone.svg">
+                                <div>Call</div>
+                            </button>
+                            <button disabled>
+                                <img src="media/message.svg">
+                                <div>Message</div>
+                            </button>
+                            <button>
+                                <img src="media/mail.svg">
+                                <div>Email</div>
+                            </button>
+                            <button disabled>
+                                <img src="media/group-29.svg">
+                                <div>Whatsapp</div>
+                            </button>
+                            <button>
+                                <img src="media/telemarketer.svg">
+                                <div>Dispositions</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <input type="checkbox" class="card-item recipient-checkbox">
+                <div class="card-items-group full">
+                    <div class="card-item recipient-details width-fit">
+                        <p class="recipient-name">Ritu Raj Srivastava (124516716)</p>
+                        <p>
+                            Batch No. - 5
+                        </p>
+                        <hr>
+                        <div class="item-group">
+                            <p>Product - Tractor</p>
+                            <p>Rs. 45,1671</p>
+                            <p>180+ Days</p>
+                        </div>
+                        <hr>
+                        <div class="item-group">
+                            <p>Current Status: <span class="status danger">High Risk</span></p>
+                        </div>
+                    </div>
+                    <table class="card-item payment-status-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">
+                                    Last Disposition:
+                                    <br>
+                                    <b>Broken Promise To Pay</b>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Assigned Date</td>
+                                <td>10th Jan 2021</td>
+                            </tr>
+                            <tr>
+                                <td>1st Called Date</td>
+                                <td>11th Jan 2021</td>
+                            </tr>
+                            <tr>
+                                <td>Last Disposition Date</td>
+                                <td>28th May 2021</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="card-item">
+                        <div>Action</div>
+                        <select class="action-select">
+                            <option selected disabled>Select</option>
+                        </select>
+                        <hr>
+                        <br>
+                        <div>View History</div>
+                        <div class="communication-btn-group">
+                            <button>
+                                <img src="media/phone.svg">
+                                <div>Call</div>
+                            </button>
+                            <button>
+                                <img src="media/message.svg">
+                                <div>Message</div>
+                            </button>
+                            <button>
+                                <img src="media/mail.svg">
+                                <div>Email</div>
+                            </button>
+                            <button>
+                                <img src="media/group-29.svg">
+                                <div>Whatsapp</div>
+                            </button>
+                            <button>
+                                <img src="media/telemarketer.svg">
+                                <div>Dispositions</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <dialog class="modal-card legal-notice-modal">
+            <h1>Issue Legal Notice</h1>
+            <ul class="modal-details">
+                <li class="menu-item">
+                    <input type="radio" id="arbitration" name="legal-notice">
+                    <label for="arbitration">Arbitration Notice</label>
+                </li>
+                <li class="menu-item">
+                    <input type="radio" id="recall" name="legal-notice">
+                    <label for="recall">Loan Recall Notice</label>
+                </li>
+                <li class="menu-item">
+                    <input type="radio" id="demand" name="legal-notice">
+                    <label for="demand">Demand Notice</label>
+                </li>
+                <li class="menu-item">
+                    <input type="radio" id="138" name="legal-notice">
+                    <label for="138">138 Notice</label>
+                </li>
+                <li class="menu-item">
+                    <input type="radio" id="sarfesi" name="legal-notice">
+                    <label for="sarfesi">Sarfesi/ 13(2) Notice</label>
+                </li>
+            </ul>
+            <div class="modal-action">
+                <button type="reset">Close</button>
+                <button class="confirm">SEND</button>
+            </div>
+        </dialog>
+        <dialog class="modal-card communicate-modal">
+            <h1>Communicate</h1>
+            <div class="modal-group">
+                <ul class="modal-detail-name">
+                    <li>
+                        <button class="menu-item active">
+                            <img src="media/phone.svg">
+                            <div class="menu-item-name">Call</div>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="menu-item">
+                            <img src="media/message.svg">
+                            <div class="menu-item-name">Message</div>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="menu-item">
+                            <img src="media/mail.svg">
+                            <div class="menu-item-name">Email</div>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="menu-item">
+                            <img src="media/group-29.svg">
+                            <div class="menu-item-name">Whatsapp</div>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="menu-item">
+                            <img src="media/telemarketer.svg">
+                            <div class="menu-item-name">Agent</div>
+                        </button>
+                    </li>
+                </ul>
+                <div class="modal-details">
+                    <div class="modal-input-group">
+                        <div>Agent</div>
+                        <select class="action-select">
+                            <option selected disabled>Select</option>
+                        </select>
+                    </div>
+                    <div class="modal-input-group">
+                        <div>Contact Number</div>
+                        <select class="action-select">
+                            <option selected disabled>Select</option>
+                        </select>
+                        <textarea name="" id=""></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-action">
+                <button type="reset">Close</button>
+                <button class="confirm">SEND</button>
+            </div>
+        </dialog>
+        <dialog class="modal-card filter-modal">
+            <h1>Filter</h1>
+            <div>
+                <div class="modal-input-group">
+                    <input type="search" placeholder="Search by keywords">
+                </div>
+                <div class="modal-subgroup dark">
+                    <div class="filter-input-group">
+                        <label for="batch">Search by Batch Number</label>
+                        <div class="batch">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="filter-input-group">
+                        <label for="batch">Product</label>
+                        <div>
+                            <select>
+                                <option selected disabled>Select</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-input-group">
+                        <label for="batch">Overdue</label>
+                        <div>
+                            <select>
+                                <option selected disabled>Select</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-input-group">
+                        <label for="batch">Last Deposition</label>
+                        <div>
+                            <select>
+                                <option selected disabled>Select</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-subgroup">
+                    <div class="filter-input-group">
+                        <label for="batch">Loan Account Range</label>
+                        <div>
+                            <input type="text" placeholder="From">
+                            <input type="text" placeholder="To">
+                        </div>
+                    </div>
+                    <div class="filter-input-group">
+                        <label for="batch">Status</label>
+                        <div>
+                            <select>
+                                <option selected disabled>Select</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-subgroup dark">
+                    <div class="filter-input-group">
+                        Search By Date
+                    </div>
+                    <div class="filter-input-group">
+                        <p>
+                            <input type="radio" name="date" id="date-bw">
+                            <label for="date-bw">Date between</label>
+                        </p>
+                        <div>
+                            <input type='date'>
+                            <input type="date">
+                        </div>
+                    </div>
+                    <div class="filter-input-group">
+                        <p>
+                            <input type="radio" name="date" id="sp-date">
+                            <label for="sp-date">Specific Date</label>
+                        </p>
+                        <div>
+                            <select>
+                                <option selected disabled>Select</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-action">
+                    <button type="reset">Close</button>
+                    <button class="confirm">Apply</button>
+                </div>
+            </div>
+        </dialog>
+    </section>
+
+</body>
+</html>
